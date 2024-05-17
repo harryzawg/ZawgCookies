@@ -19,3 +19,4 @@ passwordsalt just spits out the passwords from the Default profile into the CMD 
 
 When using Run.bat, it should automatically do everything for you, no downloads, no nothing, the bat file does it all.
 Once finished, check back at webhook.site and the output should be there.
+If you want to use Edge, you can modify -c to be -e, and if you want Profile 1, then do -cp1, for edge it's the same but -ep1.
