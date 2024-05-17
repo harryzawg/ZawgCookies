@@ -1,0 +1,2 @@
+passwords: modified fork of chrome_cookies on github (rust)
+cookies: modified fork of rookie on github (rust)

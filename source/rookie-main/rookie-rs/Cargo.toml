@@ -1,0 +1,58 @@
+[package]
+name = "rookie"
+version = "0.4.0"
+edition = "2021"
+description = "Load cookie from your web browsers"
+license-file = "MIT-LICENSE.txt"
+homepage = "https://crates.io/crates/rookie"
+documentation = "https://docs.rs/rookie/"
+repository = "https://github.com/thewh1teagle/rookie"
+readme = "../README.md"
+keywords = ["windows", "cookies", "rust", "web"]
+
+[lib]
+name = "rookie"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "bin/main.rs"
+
+[dependencies]
+aes = "0.8"
+aes-gcm = "0.10"
+anyhow = "1"
+byteorder = "1"
+cbc = "0.1"
+cfg-if = "1"
+glob = "0.3"
+log = "0.4"
+lz4_flex = "0.11"
+regex = "1"
+rusqlite = { version = "0.31", features = ["bundled"] }
+rust-ini = "0.21"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+url = "2"
+zvariant = "3"
+
+[target.'cfg(unix)'.dependencies]
+pbkdf2 = "0.12"
+sha1 = "0.10"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+zbus = "3"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+pbkdf2 = "0.12"
+sha1 = "0.10"
+
+[target.'cfg(windows)'.dependencies]
+base64 = "0.22"
+libesedb = "0.2"
+windows = { version = "0.51", features = [
+    "Win32_Security_Cryptography",
+    "Win32_Foundation",
+    "Win32_System",
+    "Win32_System_RestartManager",
+] }
