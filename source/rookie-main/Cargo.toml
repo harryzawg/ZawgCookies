@@ -1,4 +1,4 @@
 [workspace]
-members = ["rookie-rs", "bindings/python", "cli", "rookie-rs/examples/*"]
-default-members = ["rookie-rs", "bindings/python"]
+members = ["rookie-rs", "cli"]
+default-members = ["rookie-rs"]
 resolver = "2"
