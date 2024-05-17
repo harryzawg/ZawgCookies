@@ -4,7 +4,7 @@
 # ZawgCookies aka ZawgBrowsers
 
 ## Credits
-Original project(s): thewh1teeagle, for rookie, pkptzx, for Chrome_cookies, and justjavac, for chrome_password.rs
+Original project(s): thewh1teeagle, for rookie, pkptzx, for chrome_Cookies, and justjavac, for chrome_password.rs
 <br>
 
 cookies - modified fork of rookie.rs https://github.com/thewh1teagle/rookie           
