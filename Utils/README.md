@@ -6,6 +6,8 @@ To convert the cookies, enter the path to your cookies file.
 <br>
 It should automatically convert the cookies 
 <br>
+<br>
 -- Make sure you have python installed and in path --
+<br>
 <br>
 and it will tell you if you want to open the folder with the converted cookies.
