@@ -2,7 +2,9 @@ The Utils.bat file has 4 options. You can shutdown an computer after a specified
 <br>
 To convert the cookies, enter the path to your cookies file. 
 <br> 
+<br>
 -- The batch file has to be on either the root of the usb or in the Utils folder --
+<br>
 <br>
 It should automatically convert the cookies 
 <br>
