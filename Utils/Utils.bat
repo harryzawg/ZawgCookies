@@ -13,7 +13,6 @@ echo [94m 1. Shutdown after...
 echo [94m 2. System info
 echo [94m 3. IP info
 echo [94m 4. Convert to netscape
-echo [94m Back - Back to main
 echo [94m Quit - Exit
 echo [94m -----------------------------
 set /p choice=Enter your choice (1-4): 
@@ -26,10 +25,6 @@ if "%choice%"=="Quit" goto quit
 if "%choice%"=="Exit" goto quit
 if "%choice%"=="quit" goto quit
 if "%choice%"=="exit" goto quit
-if "%choice%"=="Back" goto back
-if "%choice%"=="B" goto back
-if "%choice%"=="back" goto back
-if "%choice%"=="b" goto back
 
 
 echo Invalid choice. Please try again.
@@ -47,11 +42,6 @@ shutdown.exe -a & shutdown.exe -s -t %secs% /d p:4:1 /c "System will shutdown af
 
 pause
 goto title
-
-:back
-start %~d0\Start.bat
-quit
-exit
 
 :sysinfo
 title ZawgUtils: System info
