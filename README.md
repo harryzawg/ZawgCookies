@@ -21,6 +21,7 @@ When using Run.bat, it should automatically do everything for you, no downloads,
 Once finished, check back at webhook.site and the output should be there.
 If you want to use Edge, you can modify -c to be -e, and if you want Profile 1, then do -cp1, for edge it's the same but -ep1.
 
+## How to convert to Netscape/utilities
 
 The Utils folder holds Utils.bat. The Utils.bat file has 4 options. You can shutdown an computer after a specified amount of time, look at system info and IP info, and convert the netscape cookies.
 <br>
